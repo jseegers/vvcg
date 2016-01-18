@@ -1,0 +1,178 @@
+/* Space out content a bit */
+
+body {
+    background-image: url("../images/websitebg.jpg");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+
+/* STRUCTURE */
+
+#pagewrap {
+    padding: 0px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+header {
+    height: 280px;
+    background-color: rgba(0, 0, 0, .8);
+    text-transform: capitalize;
+    color: beige;
+    text-align: center;
+}
+
+h1 {
+    font-size: 7em;
+    font-family: 'Roboto Mono';
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 6em;
+    font-family: 'Roboto Mono';
+    font-weight: 100;
+}
+
+#content {
+    width: 33%;
+    float: left;
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, .8);
+    font-weight: 100;
+    font-family: 'Roboto Mono';
+    font-size: 1.5em;
+    color: beige;
+    text-align: center;
+}
+
+#middle {
+    width: 33%;
+    /* Account for margins + border values */
+    float: left;
+    padding: 5px 15px;
+    margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+    width: 33%;
+    padding: 5px 15px;
+    float: left;
+}
+
+.bio{
+    background-color: rgba(0, 0, 0, .8);
+    height: auto;
+    font-weight: 100;
+    font-family: 'Roboto Mono';
+    font-size: 1.5em;
+    color: beige;
+    text-align: center;
+}
+footer {
+    clear: both;
+    padding: 0 15px;
+}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+
+
+/* for 980px or less */
+
+@media screen and (max-width: 980px) {
+    #pagewrap {
+        width: 94%;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    h2{
+        font-size: 4em;
+    }
+    #content {
+        width: 41%;
+        padding: 1% 4%;
+    }
+    #middle {
+        width: 41%;
+        padding: 1% 4%;
+        margin: 0px 0px 5px 5px;
+        float: right;
+    }
+    #sidebar {
+        clear: both;
+        padding: 1% 4%;
+        width: auto;
+        float: none;
+    }
+    footer {
+        padding: 1% 4%;
+    }
+}
+
+
+/* for 700px or less */
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    #content {
+        width: auto;
+        float: none;
+    }
+    #middle {
+        width: auto;
+        float: none;
+        margin-left: 0px;
+    }
+    #sidebar {
+        width: auto;
+        float: none;
+    }
+}
+
+
+/* for 480px or less */
+
+@media screen and (max-width: 480px) {
+    header {
+        height: auto;
+        
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    #sidebar {
+        display: none;
+    }
+}
+
+#content {}
+
+#sidebar {}
+
+header,
+#content,
+#middle,
+#sidebar {
+    margin-bottom: 5px;
+}
+
+#pagewrap,
+header,
+#content,
+#middle,
+#sidebar,
+footer {}
